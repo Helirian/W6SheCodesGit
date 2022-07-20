@@ -1,0 +1,74 @@
+.container {
+    width: 70%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: darkslateblue;
+}
+
+.intro-top {
+    display: block;
+    margin: 0 auto;
+    padding: 15px;
+    text-align: center;
+    opacity: 80%;
+}
+
+.continent-1,
+.continent-2,
+.continent-3,
+.continent-4,
+.continent-5,
+.continent-6 {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.continent-1,
+.continent-3,
+.continent-5 {
+    color: darkorange;
+}
+
+.continent-2,
+.continent-4,
+.continent-6 {
+    color: darkgreen;
+}
+
+.navbar-brand {
+    opacity: 70%;
+}
+
+.weather-main {
+    margin: 40px;
+}
+
+.current-back {
+    background-color: lightgreen;
+}
+
+.weather-week {
+    margin: 40px auto;
+    padding: 2px;
+}
+
+.weather-item {
+    font-size: 40px;
+    display: block;
+    text-align: center;
+    color: darkslateblue;
+    padding: 20px;
+}
+
+.weakday {
+    background-color: lightblue;
+}

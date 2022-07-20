@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link href="src/styles.css" />
+    <script src="https://kit.fontawesome.com/f5663f688f.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h3 class="intro-top">Info about each part of the world</h3>
+        <div class="row align-items-center">
+            <div class="col-4 continent-1">North America</div>
+            <div class="col-4 continent-2">Africa</div>
+            <div class="col-4 continent-3">Australia</div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-4 continent-4">Europe</div>
+            <div class="col-4 continent-5">Asia</div>
+            <div class="col-4 continent-6">South America</div>
+        </div>
+
+        <nav class="navbar bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand">Find your city</a>
+                <form class="d-flex" role="search" id="search-form">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="search-city" />
+
+                    <button class="btn btn-outline-success" type="submit">Search</button
+            ><button
+              class="btn btn-outline-success"
+              id="location-button"
+              type="button"
+            >
+              Current
+            </button>
+                </form>
+            </div>
+        </nav>
+
+        <div class="row weather-main">
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body current-back">
+                        <h4 class="card-title" id="current-time">Currently</h4>
+                        <h2 class="card-title" id="city">Kyiv</h2>
+                        <div class="row align-items-center">
+                            <div class="col-6 weather-item">
+                                <i class="fa-solid fa-sun"></i>
+                            </div>
+                            <div class="col-6">
+                                <h5 class="card-title" id="temp-value">+27</h5>
+                                <a href="" id="cels">°C</a>
+                                <a href="" id="farin">| °F</a>
+                            </div>
+                        </div>
+                        <p class="card-text">Sunny</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row weather-week">
+                <div class="col-sm-3">
+                    <div class="card">
+                        <div class="card-body weakday">
+                            <h6 class="card-title">Sun</h6>
+                            <h5 class="card-title">Kyiv</h5>
+                            <div class="row align-items-center">
+                                <div class="col-6 weather-item">
+                                    <i class="fa-solid fa-cloud-sun-rain"></i>
+                                </div>
+                                <div class="col-6">
+                                    <p class="card-title">+28°C</p>
+                                </div>
+                            </div>
+                            <p class="card-text">Rainy</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <div class="card-body weakday">
+                            <h6 class="card-title">Mon</h6>
+                            <h5 class="card-title">Kyiv</h5>
+                            <div class="row align-items-center">
+                                <div class="col-6 weather-item">
+                                    <i class="fa-solid fa-sun"></i>
+                                </div>
+                                <div class="col-6">
+                                    <p class="card-title">+32°C</p>
+                                </div>
+                            </div>
+                            <p class="card-text">Sunny</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <div class="card-body weakday">
+                            <h6 class="card-title">Tue</h6>
+                            <h5 class="card-title">Kyiv</h5>
+                            <div class="row align-items-center">
+                                <div class="col-6 weather-item">
+                                    <i class="fa-solid fa-sun"></i>
+                                </div>
+                                <div class="col-6">
+                                    <p class="card-title">+26°C</p>
+                                </div>
+                            </div>
+                            <p class="card-text">Sunny</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <div class="card-body weakday">
+                            <h6 class="card-title">Wed</h6>
+                            <h5 class="card-title">Kyiv</h5>
+                            <div class="row align-items-center">
+                                <div class="col-6 weather-item">
+                                    <i class="fa-solid fa-cloud-sun"></i>
+                                </div>
+                                <div class="col-6">
+                                    <p class="card-title">+30°C</p>
+                                </div>
+                            </div>
+                            <p class="card-text">Cloudy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="src/index.js"></script>
+</body>
+
+</html>
